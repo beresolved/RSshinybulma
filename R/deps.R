@@ -20,7 +20,7 @@ add_bulma_deps <- function(tag, theme) {
     # bulma CSS (CDN)
     htmltools::htmlDependency(
       name = "bulma", 
-      version = as.character(utils::packageVersion("shinybulma")),
+      version = as.character(utils::packageVersion("RSshinybulma")),
       src = c(href = bulma_css),
       stylesheet = "bulma.min.css"
     ),
@@ -28,7 +28,7 @@ add_bulma_deps <- function(tag, theme) {
     htmltools::htmlDependency(
       name = "bulma-extensions", 
       version = "3.0.0",
-      src = c(file = system.file("bulma-extensions-3.0.0", package = "shinybulma")),
+      src = c(file = system.file("bulma-extensions-3.0.0", package = "RSshinybulma")),
       script = bulma_extensions_js,
       stylesheet = bulma_extensions_css
     ),
@@ -36,7 +36,7 @@ add_bulma_deps <- function(tag, theme) {
     htmltools::htmlDependency(
       name = "bulmaJS", 
       version = "0.11",
-      src = c(file = system.file("bulma-js-0.11", package = "shinybulma")),
+      src = c(file = system.file("bulma-js-0.11", package = "RSshinybulma")),
       script = bulma_js
     ),
     # Themes
@@ -52,13 +52,13 @@ add_bulma_deps <- function(tag, theme) {
     htmltools::htmlDependency(
       name = "jquery-ui", 
       version = "1.12.1",
-      src = c(file = system.file("jquery-ui-1.12.1", package = "shinybulma")),
+      src = c(file = system.file("jquery-ui-1.12.1", package = "RSshinybulma")),
       script = jquery_ui_js
     ),
     # fontawesome CSS (CDN)
     htmltools::htmlDependency(
       name = "fontawesome",
-      version = as.character(utils::packageVersion("shinybulma")),
+      version = as.character(utils::packageVersion("RSshinybulma")),
       src = c(href = fontawesome_css),
       stylesheet = "all.min.css"
     ),
@@ -66,8 +66,8 @@ add_bulma_deps <- function(tag, theme) {
     htmltools::htmlDependency(
       name = "js", 
       version = "0.7.2",
-      src = c(file = system.file("js-0.7.2", package = "shinybulma")),
-      script = list.files(system.file("js-0.7.2", package = "shinybulma"))
+      src = c(file = system.file("js-0.7.2", package = "RSshinybulma")),
+      script = list.files(system.file("js-0.7.2", package = "RSshinybulma"))
     )
   )
   htmltools::attachDependencies(tag, bulmaDeps, append = TRUE)

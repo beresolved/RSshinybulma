@@ -1,0 +1,8 @@
+.Rproj.user
+.Rhistory
+.RData
+.vs/
+shinybulma.Rproj
+**/.DS_Store
+docs
+test.R

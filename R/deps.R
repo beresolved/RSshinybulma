@@ -44,7 +44,7 @@ add_bulma_deps <- function(tag, theme) {
       htmltools::htmlDependency(
         name = "bulma-themes", 
         version = "0.7.2",
-        src = c(file = system.file("bulma-themes-0.7.2", package = "shinybulma")),
+        src = c(file = system.file("bulma-themes-0.7.2", package = "RSshinybulma")),
         stylesheet = bulma_themes_css
       )
     },
